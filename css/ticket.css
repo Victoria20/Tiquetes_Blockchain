@@ -1,0 +1,64 @@
+
+body {
+  margin:0;
+  background: url(../images/33.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+button {
+	background: #009999;
+	font-weight: bold;
+}
+
+.nav-bar {
+	background: #009999;
+	text-align: center;
+	font-size: 200%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	font-weight: bold;
+}
+
+.central {
+	margin-top: 2%;
+	background: rgba(230, 242, 255, 0.82);
+	box-shadow: 2px 2px 21px rgba(0, 31, 77,0.90);
+	padding-top: 1%;
+}
+
+.center{
+  text-align: center;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 150%;
+	margin-top: 2%;
+	color: #003333;
+}
+
+.subtitle {
+	font-weight: bold;
+	font-size: 120%;
+	color: #003333;
+}
+
+.div-button {
+	margin-left: 38%;
+}
+
+.btn {
+	font-weight: bold !important;
+	padding: 3% 5% !important;
+	/*font-size:0% !important;*/
+}
+
+textarea {
+	color: #003333;
+}
+
+.form-control {
+	color: #003333;
+}
