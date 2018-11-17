@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Tiickets</title>
+<title>Tiquets</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,7 +13,7 @@
   <!--Bootstrap-->
 
   <!--JavaScript-->
-  
+  <script type="text/javascript" src="js/ticket.js"></script>
   <!--JavaScript-->
 
   <!--Style css-->
@@ -24,7 +24,7 @@
 <body>
 
   <div class="nav-bar">
-    Creación de tickets
+    Creación de tiquets
   </div>
 
   <div class="container">
@@ -33,63 +33,65 @@
         <div class="title center">Ingrese los datos</div>
         </br>
 
-        <div class="col-xs-12">
-          <div class="col-xs-12 text-left">
-            <label class="subtitle">
-              <span class="glyphicon glyphicon-bookmark"></span> Título problema
-            </label>
+        <form onsubmit="sendTicket()">
+          <div class="col-xs-12">
+            <div class="col-xs-12 text-left">
+              <label class="subtitle">
+                <span class="glyphicon glyphicon-bookmark"></span> Título problema
+              </label>
+            </div>
+            
+            <div col-xs-12">
+              <input type="text" class="form-control col-md-11" id="title" required>
+            </div>
           </div>
-          
-          <div col-xs-12">
-            <input type="text" class="form-control col-md-11" required>
-          </div>
-        </div>
 
-        <div class="col-xs-12">
-          <div class="col-xs-12 text-left">
-            </br>
-            <label class="subtitle">
-              <span class="glyphicon glyphicon-calendar"></span> Fecha
-            </label>
+          <div class="col-xs-12">
+            <div class="col-xs-12 text-left">
+              </br>
+              <label class="subtitle">
+                <span class="glyphicon glyphicon-calendar"></span> Fecha
+              </label>
+            </div>
+            
+            <div col-xs-12">
+              <input type="date" class="form-control col-md-11 date" id="date" required>
+            </div>
           </div>
-          
-          <div col-xs-12">
-            <input type="text" class="form-control col-md-11" required>
-          </div>
-        </div>
 
-        <div class="col-xs-12">
-          <div class="col-xs-12 text-left">
-            </br>
-            <label class="subtitle">
-              <span class="glyphicon glyphicon-user"></span> Solicitante
-            </label>
+          <div class="col-xs-12">
+            <div class="col-xs-12 text-left">
+              </br>
+              <label class="subtitle">
+                <span class="glyphicon glyphicon-user"></span> Solicitante
+              </label>
+            </div>
+            
+            <div col-xs-12">
+              <input type="text" class="form-control col-md-11" id="petitioner" required>
+            </div>
           </div>
-          
-          <div col-xs-12">
-            <input type="text" class="form-control col-md-11" required>
-          </div>
-        </div>
 
-        <div class="col-xs-12">
-          <div class="col-xs-12 text-left">
-            </br>
-            <label class="subtitle">
-              <span class="glyphicon glyphicon-align-justify"></span> Descripción
-            </label>
+          <div class="col-xs-12">
+            <div class="col-xs-12 text-left">
+              </br>
+              <label class="subtitle">
+                <span class="glyphicon glyphicon-align-justify"></span> Descripción
+              </label>
+            </div>
+            
+            <div col-xs-12">
+              <textarea class="form-control col-md-11" id="description" required></textarea>
+            </div>
           </div>
           
-          <div col-xs-12">
-            <textarea class="form-control col-md-11"></textarea>
+          <div class="div-button col-xs-12">
+            </br>
+            <button class="btn">Enviar</button>
+            </br>
+            </br>
           </div>
-        </div>
-        
-        <div class="div-button col-xs-12">
-          </br>
-          <button class="btn">Enviar</button>
-          </br>
-          </br>
-        </div>
+        </form>
       </div>
     </div>
   </div>
